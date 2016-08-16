@@ -1,33 +1,75 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333; }
+.banner-div {
+  background-image: url("../images/banner.png");
+  height: 450px; }
 
-.box {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px; }
+h1 {
+  font-size: 60px;
+  color: #fff;
+  margin-top: 95px; }
 
-.box {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  width: 820px;
-  margin: auto; }
+h2, h3 {
+  font-size: 24px;
+  color: #234266;
+  font-weight: bold; }
 
-.message, .success, .error, .warning {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333; }
+h3 {
+  font-size: 17px; }
 
-.success {
-  border-color: green; }
+.align-center {
+  text-align: center; }
 
-.error {
-  border-color: red; }
+.main-section, footer {
+  padding-top: 40px;
+  padding-bottom: 40px; }
 
-.warning {
-  border-color: yellow; }
+/*----- Nav Bar CSS ------ */
+.navbar {
+  background-color: #fff;
+  border: 0px; }
 
-/*# sourceMappingURL=style.css.map */
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  color: #234266;
+  background-color: #a2d5e6; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  color: #234266;
+  background-color: #a2d5e6; }
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+  color: #234266;
+  background-color: #a2d5e6; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #234266;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 5px 40px !important; }
+
+.dropdown-menu {
+  background-color: #a2d5e6;
+  font-weight: bold; }
+
+.dropdown-menu > li > a {
+  color: #234266;
+  font-size: 14px;
+  font-weight: 900; }
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+  background-color: #234266;
+  color: #fff; }
+
+/*----- Footer CSS ------ */
+footer {
+  background-color: #797d82; }
+  footer h3 {
+    font-size: 21px;
+    color: #fff; }
+  footer p {
+    color: #fff; }
+  footer a {
+    color: #fff; }
+  footer ul {
+    list-style-type: none;
+    margin-top: 132px; }
+  footer li {
+    display: inline; }

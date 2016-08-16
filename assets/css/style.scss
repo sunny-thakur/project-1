@@ -1,45 +1,103 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-$width: 820px;
-$margin: auto;
+$primary-color:#234266;
+$primary-font-size:60px;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+.banner-div{
+background-image:url('../images/banner.png');
+height: 450px;
 }
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+h1{
+font-size:$primary-font-size;
+color:#fff;
+margin-top: 95px;
 }
 
-.box { @include border-radius(10px); }
-
-.box {
-@include border-radius(10px/2); 
-width:$width;
-margin:$margin;
+h2{
+font-size:$primary-font-size/3+4;
+color:$primary-color;
+font-weight:bold;
 }
 
-.message {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333;
+h3{
+@extend h2;
+font-size:$primary-font-size/3-3;
 }
 
-.success {
-  @extend .message;
-  border-color: green;
+.align-center{
+text-align:center;
 }
 
-.error {
-  @extend .message;
-  border-color: red;
+.main-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.warning {
-  @extend .message;
-  border-color: yellow;
+/*----- Nav Bar CSS ------ */
+
+.navbar{
+background-color:#fff;
+border:0px;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+color: $primary-color;
+background-color:#a2d5e6;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+color: $primary-color;
+background-color:#a2d5e6;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+color: $primary-color;
+background-color:#a2d5e6;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+color:$primary-color;
+font-size:$primary-font-size/6+4;
+font-weight:900;
+padding: 5px 40px !important;
+}
+
+.dropdown-menu{
+background-color:#a2d5e6;
+font-weight:bold;
+}
+
+.dropdown-menu>li>a{
+color:$primary-color;
+font-size:$primary-font-size/6+4;
+font-weight:900;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+background-color:$primary-color;
+color:#fff;
+}
+
+/*----- Footer CSS ------ */
+
+footer{
+@extend .main-section;
+background-color:#797d82;
+
+	h3{
+		font-size:$primary-font-size/3+1;
+		color:#fff;
+	}
+	p{
+	    color:#fff;
+	}
+	a{
+	    color:#fff;
+	}
+	ul{
+		list-style-type: none;
+		margin-top: 132px;
+	}
+	li{
+		display: inline;
+	}
 }
